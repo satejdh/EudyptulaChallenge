@@ -1,0 +1,12 @@
+obj-m =TASK_01.o
+#ifdef KERNEL_SOURCE
+ifeq ($(origin KERNEL_SOURCE), "environment")
+	KDIR := $(KERNEL_SOURCE)
+else
+	KDIR := /lib/modules/$(shell uname -r)/build
+endif
+
+all:
+	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+clean: 
+	rm -rf $(wildcard *.o *.ko *.mod.* .c* .t* test Module.symvers *.order *.markers)

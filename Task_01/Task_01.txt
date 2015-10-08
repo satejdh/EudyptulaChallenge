@@ -1,0 +1,25 @@
+############################################# Dmesg Output showing Kernel module inserted and Init called #########################################
+[  881.132379] sd 7:0:0:0: [sdc] Mode Sense: 45 00 00 00
+[  881.133000] sd 7:0:0:0: [sdc] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[  881.144642]  sdc: sdc1
+[  881.147343] sd 7:0:0:0: [sdc] Attached SCSI removable disk
+[  881.367670] FAT-fs (sdc1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[  881.479423] systemd-hostnamed[3043]: Warning: nss-myhostname is not installed. Changing the local hostname might make it unresolveable. Please install nss-myhostname!
+[ 4283.315281] systemd-hostnamed[4436]: Warning: nss-myhostname is not installed. Changing the local hostname might make it unresolveable. Please install nss-myhostname!
+[ 4693.048518] usb 1-1.2: USB disconnect, device number 5
+[ 9894.350278] perf samples too long (2512 > 2500), lowering kernel.perf_event_max_sample_rate to 50000
+[10437.165444] Hello World!
+
+############################################ lsmod Output showing inserted module on the top #######################################################
+Module                  Size  Used by
+TASK_01                12505  0 
+nls_iso8859_1          12713  0 
+rfcomm                 69160  8 
+bnep                   19624  2 
+snd_hda_codec_hdmi     46368  1 
+snd_hda_codec_realtek    65812  1 
+wl                   6367819  0 
+keucr                  72238  0 
+uvcvideo               80885  0 
+
+#####################################################################################################################################################

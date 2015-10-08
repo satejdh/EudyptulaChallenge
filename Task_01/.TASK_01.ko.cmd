@@ -1,0 +1,1 @@
+cmd_/media/satej/My_Stuff/STUDY/Eudyptula_Challenge/Task_01/TASK_01.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.13.0-53-generic/scripts/module-common.lds --build-id  -o /media/satej/My_Stuff/STUDY/Eudyptula_Challenge/Task_01/TASK_01.ko /media/satej/My_Stuff/STUDY/Eudyptula_Challenge/Task_01/TASK_01.o /media/satej/My_Stuff/STUDY/Eudyptula_Challenge/Task_01/TASK_01.mod.o

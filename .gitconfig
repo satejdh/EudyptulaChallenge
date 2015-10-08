@@ -1,0 +1,8 @@
+[user]
+	name = satdh.linux
+	email = satdh.linux@gmail.com
+[sendemail]
+	smtpencryption = tls
+	smtpserver = smtp.gmail.com
+	smtpuser = satdh.linux@gmail.com
+	smtpserverport = 587
